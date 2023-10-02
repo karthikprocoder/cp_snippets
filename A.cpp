@@ -17,7 +17,6 @@ void solve(int test_no) {
     dbg(N);
     cout << N * N << '\n';
 }
-
 int main() {
 
     ios_base::sync_with_stdio(false);

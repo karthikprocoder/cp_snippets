@@ -1,4 +1,5 @@
 #!/bin/bash
+
 rm -rf bin/*
 PROG_NAME=$1
 # echo $PROG_NAME
