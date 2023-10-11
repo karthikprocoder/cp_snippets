@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-
+using ll = long long;
 /*
 ** commutative propertiy holds true for xor, and, or *****
 *** useful in hashing + bitmask problems **********
@@ -44,4 +44,25 @@ void print_binary(int x) {
         cerr << (x >> i & 1 ? 1 : 0);
     }
     cerr << "\n";
+}
+
+/* useful inbuilt functions */
+// https://codeforces.com/blog/entry/72437
+int popcnt(int x) { return __builtin_popcount(x); }
+int popcnt(ll x) { return __builtin_popcountll(x); }
+int popcnt_mod_2(int x) { return __builtin_parity(x); }
+int popcnt_mod_2(ll x) { return __builtin_parityll(x); }
+// (0, 1, 2, 3, 4, 6) -> (-1, 0, 1, 1, 2, 2)
+int topbit(int x) { return (x == 0 ? -1 : 31 - __builtin_clz(x)); }
+int topbit(ll x) { return (x == 0 ? -1 : 63 - __builtin_clzll(x)); }
+// (0, 1, 2, 3, 4, 6) -> (-1, 0, 1, 0, 2, 1)
+int lowbit(int x) { return (x == 0 ? -1 : __builtin_ctz(x)); }
+int lowbit(ll x) { return (x == 0 ? -1 : __builtin_ctzll(x)); }
+
+
+int main() {
+    int n;
+    cin >> n;
+    cout << __lg(n) << '\n';
+    cout << __builtin_ffs(n) << '\n';
 }
