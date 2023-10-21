@@ -2,7 +2,7 @@
 using namespace std;
 
 #ifndef ONLINE_JUDGE
-#include "inc/debug.h"
+#include "debug.h"
 #else
 #define dbg(...) 1
 #endif
