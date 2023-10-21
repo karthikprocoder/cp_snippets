@@ -13,12 +13,12 @@ init()
  
 start=time()
  
-os.system("./bin/a > output.txt")
+os.system("./bin/a > output.out")
  
 end=time()
  
 
-DIFF=os.system('diff expected_output.txt output.txt  -w --strip-trailing-cr -B -y')
+DIFF=os.system('diff expected_output.out output.out  -w --strip-trailing-cr -B -y')
 
 if DIFF==0:
     stdout.write(f"\n{Fore.GREEN}Passed!!{Fore.RESET}\n\n")
