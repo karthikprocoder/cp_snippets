@@ -1,0 +1,16 @@
+/*
+ * What to do ?
+ * -    Read the problem carefully
+ * -    Note down the extra info / constraint given
+ * -    Expected Time / Space complexity
+ * -    Sorting, Two Pointer, Constructive Algo, Binary Search, Bimask, DP / Recursion, Trees, Graph
+ * -    Data Structures that achieve this
+ * -    STACK, PRIORITY QUEUE, QUEUE, SET, MULTISET, OR simple precalculations
+ * -    If stuck, just solve for some sample testcases and try to observe a pattern (for constructive algo)
+ * -    For DP problem try to make cases like take and dontTake
+ * -    Consider reading the next problem and then coming back
+ * -    Look for edge cases (n == 0, 1) before submitting
+ * What you shouldn't do ?
+ * -    Coding before proving the algorithm
+ * -    Spending long time on a single approach
+ */
